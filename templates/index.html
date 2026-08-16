@@ -1,0 +1,13 @@
+<div class="card">
+    <h1>Bienvenido, {{ usuario }}</h1>
+    <p><strong>Materia:</strong> {{ materia }}</p>
+    
+    <h2>Módulos del Cursado</h2>
+    <ul>
+        {% for modulo in modulos %}
+            <li>
+                <strong>{{ modulo.nombre }}</strong> - Estado: {{ modulo.estado }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
